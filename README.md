@@ -21,27 +21,27 @@ of a few hours while working on other projects.
 
 ## atlantik.rb
 
-```shell
+```text
 ❯ ruby atlantik.rb configure
 Gateway ID (on the bottom of the gateway, e.g. 888.1.xxxx.xx.xx): 888.1.23xx.xx.xx
 saved Gateway ID 888.1.23xx.xx.xx to .atlantik-gateway
 
 ❯ ruby atlantik.rb status
   Orphek Atlantik v4   [192.168.2.62]  id 888.1.23xx.xx.xx  fw version 0.8692 A
-  time 04:27 (Asia/Hong Kong)   temp 26.3°C
+  time 09:25 (device local)   temp 30.7°C
   channels now:
-    Red    [····················]   0
-    Green  [····················]   0
-    Blue   [····················]   0
-    White  [····················]   0
+    Red    [#···················]  12
+    Green  [####················]  46
+    Blue   [#···················]  12
+    White  [#···················]  12
   day schedule loaded (00→23h):
-    Red              ▁▂▂▃▃▃▄▄        00:00=0% 09:00=1% 12:00=30% 17:00=50% 18:00=0%
-    Green           ▁▂▃▄▄▄▄▅▅▄▂      00:00=0% 08:00=1% 12:00=50% 17:30=60% 20:00=0%
-    Blue             ▁▂▂▂▂▂▂▂        00:00=0% 09:00=1% 12:00=30% 17:00=30% 18:00=0%
-    White            ▁▂▂▃▃▃▄▄▂       00:00=0% 09:00=1% 12:00=30% 17:00=50% 19:00=0%
+    Red    [..........▁▂▂▃▃▃▄▄......]   00:00=0% 09:00=1% 12:00=30% 17:00=50% 18:00=0%
+    Green  [.........▁▂▃▄▄▄▄▅▅▄▂....]   00:00=0% 08:00=1% 12:00=50% 17:30=60% 20:00=0%
+    Blue   [..........▁▂▂▂▂▂▂▂......]   00:00=0% 09:00=1% 12:00=30% 17:00=30% 18:00=0%
+    White  [..........▁▂▂▃▃▃▄▄▂.....]   00:00=0% 09:00=1% 12:00=30% 17:00=50% 19:00=0%
 ```
 
-```shell
+```text
 ❯ ruby atlantik.rb
 Orphek Atlantik v4 CLI
 
