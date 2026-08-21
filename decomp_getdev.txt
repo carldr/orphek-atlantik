@@ -1,0 +1,22 @@
+void FUN_0049a7b4(ostream *param_1)
+
+{
+  int in_v0;
+  ostream *this;
+  int unaff_s8;
+  
+  this = std::operator<<(param_1,(char *)(in_v0 + 0x3c10));
+  std::ostream::operator<<(this,(_func_ostream_ptr_ostream_ptr *)&LAB_00404e40);
+  FUN_0041b754(unaff_s8 + 0x2c);
+  FUN_0042202c(unaff_s8 + 0x2c,1);
+  FUN_0042256c(unaff_s8 + 0x38,unaff_s8 + 0x2c);
+  FUN_0046852c(unaff_s8 + 0x2c);
+  std::string::string((string *)(unaff_s8 + 0x28),(string *)(unaff_s8 + 0x38));
+  FUN_004af138(*(undefined4 *)(unaff_s8 + 0x50),*(undefined4 *)(unaff_s8 + 0x54),
+               *(undefined4 *)(unaff_s8 + 0x58),*(undefined4 *)(unaff_s8 + 0x5c));
+  std::string::~string((string *)(unaff_s8 + 0x28));
+  std::string::~string((string *)(unaff_s8 + 0x38));
+  FUN_0041b794(unaff_s8 + 0x2c);
+  return;
+}
+

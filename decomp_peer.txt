@@ -1,0 +1,93 @@
+void FUN_00440b60(void)
+
+{
+  DAT_004fc0e8 = DAT_004fc0e8 + 1;
+  printf("\n keepalive times --------------- %d\n",DAT_004fc0e8);
+  printf("event_queue obj_q peer_map dsr_m(req resp) dest_m(req resp)\n%11d %5d %8d %5d(%d,%d) %6d(%d,%d)\n"
+         ,DAT_00505bc8,DAT_00505c20,*(undefined4 *)(DAT_004fc088 + 0x28),
+         *(undefined4 *)(DAT_004fc08c + 0x28),DAT_004fc0cc,DAT_004fc0d0,
+         *(undefined4 *)(DAT_004fc090 + 0x28),DAT_004fc0c4,DAT_004fc0c8);
+  return;
+}
+
+void FUN_0044f080(void)
+
+{
+  undefined4 uVar1;
+  undefined4 *puVar2;
+  int iVar3;
+  char *pcVar4;
+  int *piVar5;
+  char *local_68;
+  int local_64;
+  undefined4 local_60;
+  undefined1 auStack_50 [4];
+  undefined4 local_4c;
+  undefined4 local_48;
+  undefined4 local_44;
+  undefined4 local_40;
+  undefined1 local_3c [16];
+  undefined1 auStack_2c [4];
+  undefined4 local_28;
+  undefined4 local_24;
+  undefined4 local_20;
+  undefined4 local_1c;
+  
+  FUN_004507b0(&DAT_004fc108);
+  if (DAT_004fb224 == -1) {
+    if (DAT_004fb220 == 1) {
+      DAT_004fb22c = DAT_004fb258;
+      if (DAT_004fc120 == (char *)0x0) {
+        local_68 = "register.longtooth.io";
+      }
+      else {
+        local_68 = DAT_004fc120;
+      }
+      printf("%s\r\n",local_68);
+      DAT_004fb228 = FUN_00452368(local_68);
+      if (DAT_004fb228 == 0) {
+        puts("LongTooth register host ip cann\'t be obtained.\r");
+        FUN_00451ce4(0x7e,auStack_50);
+        puVar2 = (undefined4 *)FUN_00440a9c();
+        local_40 = 0;
+        local_4c = *puVar2;
+        local_48 = puVar2[1];
+        local_44 = puVar2[2];
+        FUN_00440e84(0x20005,0,0,local_4c,local_48,local_44,0,0,auStack_50,4);
+      }
+    }
+    if (DAT_004fb228 != 0) {
+      local_3c._0_2_ = 2;
+      local_3c._4_4_ = DAT_004fb228;
+      local_3c._2_2_ = htons((uint16_t)DAT_004fb22c);
+      local_64 = socket(2,2,6);
+      if (local_64 != -1) {
+        iVar3 = connect(local_64,(sockaddr *)local_3c,0x10);
+        if (iVar3 == -1) {
+          pcVar4 = inet_ntoa((in_addr)local_3c._4_4_);
+          uVar1 = DAT_004fb22c;
+          piVar5 = __errno_location();
+          printf("LongTooth connect to %s:%d failed,caused by %d\r\n",pcVar4,uVar1,*piVar5);
+          local_60 = 0x20007;
+          if (DAT_004fb220 == 1) {
+            local_60 = 0x20005;
+          }
+          piVar5 = __errno_location();
+          FUN_00451ce4(*piVar5,auStack_2c);
+          puVar2 = (undefined4 *)FUN_00440a9c();
+          local_1c = 0;
+          local_28 = *puVar2;
+          local_24 = puVar2[1];
+          local_20 = puVar2[2];
+          FUN_00440e84(local_60,0,0,local_28,local_24,local_20,0,0,auStack_2c,4);
+          FUN_00452320(local_64);
+          local_64 = -1;
+        }
+      }
+      DAT_004fb224 = local_64;
+    }
+  }
+  FUN_004507e8(&DAT_004fc108);
+  return;
+}
+

@@ -1,0 +1,23 @@
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1158/uhttpd
+tcp        0      0 0.0.0.0:53              0.0.0.0:*               LISTEN      1196/dnsmasq
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      1030/dropbear
+tcp        0      0 127.0.0.1:1880          0.0.0.0:*               LISTEN      5180/zigbee-jip-dae
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      1158/uhttpd
+tcp        0      0 :::53                   :::*                    LISTEN      1196/dnsmasq
+tcp        0      0 :::22                   :::*                    LISTEN      1030/dropbear
+udp        0      0 0.0.0.0:1813            0.0.0.0:*                           1125/radiusd
+udp        0      0 0.0.0.0:30500           0.0.0.0:*                           5067/longtooth_test
+udp        0      0 0.0.0.0:53              0.0.0.0:*                           1196/dnsmasq
+udp        0      0 0.0.0.0:67              0.0.0.0:*                           1196/dnsmasq
+udp        0      0 0.0.0.0:43100           0.0.0.0:*                           5067/longtooth_test
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           1202/avahi-daemon: 
+udp        0      0 :::1812                 :::*                                1125/radiusd
+udp        0      0 :::38427                :::*                                5067/longtooth_test
+udp        0      0 :::546                  :::*                                5286/odhcp6c
+udp        0      0 :::547                  :::*                                5416/6relayd
+udp        0      0 :::53                   :::*                                1196/dnsmasq
+udp        0      0 :::1873                 :::*                                5180/zigbee-jip-dae
+udp        0      0 :::1874                 :::*                                1230/FWDistribution
+udp        0      0 :::5353                 :::*                                1202/avahi-daemon: 

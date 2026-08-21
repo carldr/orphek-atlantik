@@ -1,0 +1,891 @@
+Executing command line: discover;print
+Running discovery...
+Discovered 4 devices (Time: 9ms)
+  Node: fd04:bd3:80e8:10::1    Device ID: 0x08010001
+    Mib: 'Node', ID 0xffffff00
+      Var: 'MacAddr', Index 0
+        E_JIP_VAR_TYPE_UINT64, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DescriptiveName', Index 1
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Version', Index 2
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'TxPower', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Status', Index 4
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'JenNet', ID 0xffffff01
+      Var: 'DeviceType', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Parent Interface', Index 1
+        E_JIP_VAR_TYPE_UINT64, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'TreeVersion', Index 2
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SubTreeNodes', Index 3
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'NetworkTable', Index 4
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: 
+            000 { 0x00 0x15 0x8d 0x00 0x03 0x89 0x67 0x07 0x08 0x01 0x00 0x10 }
+            14203 { 0x00 0x17 0x88 0x01 0x0b 0x24 0x2e 0x04 0x08 0x01 0x11 0x75 }
+            19087 { 0x00 0x15 0x8d 0x00 0x02 0x7d 0x2a 0x28 0x6e 0xc7 0x00 0x01 }
+
+      Var: 'LastChange', Index 5
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'NeighbourTable', Index 6
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Depth', Index 7
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'Groups', ID 0xffffff02
+      Var: 'Groups', Index 0
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'AddGroup', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'RemoveGroup', Index 2
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ClearGroups', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'OND', ID 0xffffff03
+      Var: 'Images', Index 0
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DeviceID', Index 1
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ChipSet', Index 2
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Revision', Index 3
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Download', Index 4
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LoadImage', Index 5
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'DeviceID', ID 0xffffff04
+      Var: 'DeviceID', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: 134283265
+
+      Var: 'DeviceTypes', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: { 0x00 0x01 }
+
+      Var: 'ModelID', Index 2
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BuildVersion', Index 3
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'MaufactureID', Index 4
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+  Node: fd04:bd3:80e8:10:15:8d00:389:6707    Device ID: 0x08010010
+    Mib: 'Node', ID 0xffffff00
+      Var: 'MacAddr', Index 0
+        E_JIP_VAR_TYPE_UINT64, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DescriptiveName', Index 1
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Version', Index 2
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'TxPower', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Status', Index 4
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'Groups', ID 0xffffff02
+      Var: 'Groups', Index 0
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'AddGroup', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'RemoveGroup', Index 2
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ClearGroups', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'DeviceID', ID 0xffffff04
+      Var: 'DeviceID', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: 134283280
+
+      Var: 'DeviceTypes', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: { 0x00 0x02 }
+
+      Var: 'ModelID', Index 2
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BuildVersion', Index 3
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'MaufactureID', Index 4
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'ControlBridge', ID 0xfffffd01
+      Var: 'FactoryReset', Index 0
+        E_JIP_VAR_TYPE_INT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'PermitJoining', Index 1
+        E_JIP_VAR_TYPE_INT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Touchlink', Index 2
+        E_JIP_VAR_TYPE_INT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'RemoveNode', Index 3
+        E_JIP_VAR_TYPE_UINT64, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+  Node: fd04:bd3:80e8:10:17:8801:b24:2e04    Device ID: 0x08011175
+    Mib: 'Node', ID 0xffffff00
+      Var: 'MacAddr', Index 0
+        E_JIP_VAR_TYPE_UINT64, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DescriptiveName', Index 1
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Version', Index 2
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'TxPower', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Status', Index 4
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'JenNet', ID 0xffffff01
+      Var: 'DeviceType', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Parent Interface', Index 1
+        E_JIP_VAR_TYPE_UINT64, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'TreeVersion', Index 2
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SubTreeNodes', Index 3
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'NetworkTable', Index 4
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LastChange', Index 5
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'NeighbourTable', Index 6
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Depth', Index 7
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'Groups', ID 0xffffff02
+      Var: 'Groups', Index 0
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'AddGroup', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'RemoveGroup', Index 2
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ClearGroups', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'OND', ID 0xffffff03
+      Var: 'Images', Index 0
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DeviceID', Index 1
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ChipSet', Index 2
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Revision', Index 3
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Download', Index 4
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LoadImage', Index 5
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'DeviceID', ID 0xffffff04
+      Var: 'DeviceID', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: 134287733
+
+      Var: 'DeviceTypes', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: { 0x00 0xe1 }
+
+      Var: 'ModelID', Index 2
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BuildVersion', Index 3
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'MaufactureID', Index 4
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'NodeStatus', ID 0xfffffe80
+      Var: 'SystemStatus', Index 0
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ColdStartCount', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ResetCount', Index 2
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'WatchdogCount', Index 3
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BrownoutCount', Index 4
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'HeapMin', Index 5
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'HeapMax', Index 6
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'StackMin', Index 7
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'NodeControl', ID 0xfffffe82
+      Var: 'Reset', Index 0
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'FactoryReset', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'NwkStatus', ID 0xfffffe88
+      Var: 'RunTime', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'UpCount', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'UpTime', Index 2
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DownTime', Index 3
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'NwkSecurity', ID 0xfffffe8b
+      Var: 'KeyNetwork', Index 0
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'KeyGateway', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'KeyStandalone', Index 2
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Channel', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'PanId', Index 4
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Rejoin', Index 5
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'BulbStatus', ID 0xfffffe00
+      Var: 'OnCount', Index 0
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'OnTime', Index 1
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'OffTime', Index 2
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ChipTemp', Index 3
+        E_JIP_VAR_TYPE_INT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BusVolts', Index 4
+        E_JIP_VAR_TYPE_INT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'BulbScene', ID 0xfffffe03
+      Var: 'AddSceneId', Index 0
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DelSceneId', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneId', Index 2
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneMode', Index 3
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneLumTarget', Index 4
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'BulbControl', ID 0xfffffe04
+      Var: 'Mode', Index 0
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneId', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumTarget', Index 2
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumCurrent', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumChange', Index 4
+        E_JIP_VAR_TYPE_INT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumCadence', Index 5
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumCadTimer', Index 6
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'DeviceControl', ID 0xfffffea2
+      Var: 'Mode', Index 0
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneId', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'Alarm', ID 0x6ec71000
+      Var: 'Blinking', Index 0
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Fadein', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+  Node: fd04:bd3:80e8:10:15:8d00:27d:2a28    Device ID: 0x6ec70001
+    Mib: 'Node', ID 0xffffff00
+      Var: 'MacAddr', Index 0
+        E_JIP_VAR_TYPE_UINT64, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DescriptiveName', Index 1
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Version', Index 2
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'TxPower', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Status', Index 4
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'JenNet', ID 0xffffff01
+      Var: 'DeviceType', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Parent Interface', Index 1
+        E_JIP_VAR_TYPE_UINT64, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'TreeVersion', Index 2
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SubTreeNodes', Index 3
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'NetworkTable', Index 4
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LastChange', Index 5
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'NeighbourTable', Index 6
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Depth', Index 7
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'Groups', ID 0xffffff02
+      Var: 'Groups', Index 0
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'AddGroup', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'RemoveGroup', Index 2
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ClearGroups', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'OND', ID 0xffffff03
+      Var: 'Images', Index 0
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DeviceID', Index 1
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ChipSet', Index 2
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Revision', Index 3
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Download', Index 4
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LoadImage', Index 5
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'DeviceID', ID 0xffffff04
+      Var: 'DeviceID', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: 1858535425
+
+      Var: 'DeviceTypes', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: { 0x00 0x00 }
+
+      Var: 'ModelID', Index 2
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BuildVersion', Index 3
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'MaufactureID', Index 4
+        E_JIP_VAR_TYPE_STR, E_JIP_ACCESS_TYPE_CONST, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'NodeStatus', ID 0xfffffe80
+      Var: 'SystemStatus', Index 0
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ColdStartCount', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ResetCount', Index 2
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'WatchdogCount', Index 3
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BrownoutCount', Index 4
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'HeapMin', Index 5
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'HeapMax', Index 6
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'StackMin', Index 7
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'NodeControl', ID 0xfffffe82
+      Var: 'Reset', Index 0
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'FactoryReset', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'NwkStatus', ID 0xfffffe88
+      Var: 'RunTime', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'UpCount', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'UpTime', Index 2
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DownTime', Index 3
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'NwkSecurity', ID 0xfffffe8b
+      Var: 'KeyNetwork', Index 0
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'KeyGateway', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'KeyStandalone', Index 2
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Channel', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'PanId', Index 4
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'Rejoin', Index 5
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'BulbStatus', ID 0xfffffe00
+      Var: 'OnCount', Index 0
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'OnTime', Index 1
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'OffTime', Index 2
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'ChipTemp', Index 3
+        E_JIP_VAR_TYPE_INT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BusVolts', Index 4
+        E_JIP_VAR_TYPE_INT16, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'BulbScene', ID 0xfffffe03
+      Var: 'AddSceneId', Index 0
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'DelSceneId', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneId', Index 2
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneMode', Index 3
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneLumTarget', Index 4
+        E_JIP_VAR_TYPE_TABLE_BLOB, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'BulbControl', ID 0xfffffe04
+      Var: 'Mode', Index 0
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneId', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumTarget', Index 2
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumCurrent', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumChange', Index 4
+        E_JIP_VAR_TYPE_INT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumCadence', Index 5
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'LumCadTimer', Index 6
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'DeviceControl', ID 0xfffffea2
+      Var: 'Mode', Index 0
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'SceneId', Index 1
+        E_JIP_VAR_TYPE_UINT16, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'RgbwBulbControl', ID 0x6ec70008
+      Var: 'RedMode', Index 0
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'GreenMode', Index 1
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BlueMode', Index 2
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'WhiteMode', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'RedLumTarget', Index 4
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'GreenLumTarget', Index 5
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BlueLumTarget', Index 6
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'WhiteLumTarget', Index 7
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'RgbwCurves', ID 0x6ec70009
+      Var: 'RedCurve0', Index 0
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'RedCurve1', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'GreenCurve0', Index 2
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'GreenCurve1', Index 3
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BlueCurve0', Index 4
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BlueCurve1', Index 5
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'WhiteCurve0', Index 6
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'WhiteCurve1', Index 7
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'RgbwClouds', ID 0x6ec70010
+      Var: 'CloudMode', Index 0
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'CloudTime', Index 1
+        E_JIP_VAR_TYPE_BLOB, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'RgbwTemperature', ID 0x6ec70011
+      Var: 'Temperature', Index 0
+        E_JIP_VAR_TYPE_FLT, E_JIP_ACCESS_TYPE_READ_ONLY, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'RgbwWorkMode', ID 0x6ec70012
+      Var: 'RedMode', Index 0
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'GreenMode', Index 1
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'BlueMode', Index 2
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'WhiteMode', Index 3
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'RgbwCurrentTime', ID 0x6ec70013
+      Var: 'CurrentTime', Index 0
+        E_JIP_VAR_TYPE_UINT32, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+    Mib: 'RgbwDemoMode', ID 0x6ec70014
+      Var: 'Time', Index 0
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'MaxLevel', Index 1
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+      Var: 'StartDemo', Index 2
+        E_JIP_VAR_TYPE_UINT8, E_JIP_ACCESS_TYPE_READ_WRITE, E_JIP_SECURITY_NONE
+          Value: ?
+
+
+

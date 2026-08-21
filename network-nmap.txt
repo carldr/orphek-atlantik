@@ -1,0 +1,12 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-20 08:25 +0100
+(Other hosts on the LAN redacted — only the Orphek gateway is kept.)
+
+Nmap scan report for 192.168.2.98
+Host is up (0.0010s latency).
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     Dropbear sshd 2011.54 (protocol 2.0)
+80/tcp open  http    OpenWrt uHTTPd
+Service Info: OS: Linux; Device: WAP; CPE: cpe:/o:linux:linux_kernel
+
+Nmap done.

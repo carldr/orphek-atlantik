@@ -1,0 +1,11 @@
+# Packet captures — contain LAN MACs/IPs; reproduce via FINDINGS §18/§30
+*.pcap
+lt-getdevices-reply.bin
+
+.DS_Store
+
+# Vendor inputs (re-downloadable, ~106MB) — see README
+orphek.com/
+
+# per-user local config (Gateway ID)
+.atlantik-gateway
