@@ -234,6 +234,15 @@ module LongTooth
     ""
   end
 
+  # Force the gateway to re-poll the mesh so its device cache (clock, temp,
+  # channel levels) is current. Called before every gateway command — a plain
+  # GetDevices otherwise returns a stale cache that only the phone app refreshes.
+  # (§44)
+  def refresh!
+    read("GetUpdateDeviceCache")
+    nil
+  end
+
   # Decode an RgbwCurves blob into [[secs_of_day, percent], …].
   # Each 4-byte point = [lum:1][timestamp:3 BE secs]; percent = lum/255*100.
   def decode_curve(hex)
@@ -257,14 +266,14 @@ module LongTooth
 
   # Render a channel's Curve0+Curve1 as sparkline + key points.
   def render_curves(curves)
-    bars = " ▁▂▃▄▅▆▇█"
+    bars = ".▁▂▃▄▅▆▇█"
     { "Red" => "31", "Green" => "32", "Blue" => "34", "White" => "37" }.each do |ch, col|
       pts = (decode_curve(curves["#{ch}Curve0"] || "") +
              decode_curve(curves["#{ch}Curve1"] || "")).sort_by(&:first)
       graph = (0..23).map { |h| bars[(curve_at(pts, h * 3600) / 100.0 * 8).round] }.join
       keys = pts.chunk { |x| x }.map(&:first)
                 .map { |t, v| format("%02d:%02d=%d%%", t / 3600, t % 3600 / 60, v) }.join(" ")
-      printf("    \e[%sm%-6s\e[0m %s  %s\n", col, ch, graph, keys)
+      printf("    \e[%sm%-6s\e[0m [%s]   %s\n", col, ch, graph, keys)
     end
   end
 
@@ -308,7 +317,7 @@ module LongTooth
 
       READ commands (safe any time):
         status              live snapshot: gateway IP + firmware, device clock &
-                            timezone, heatsink temp, current per-channel levels
+                            heatsink temp, current per-channel levels
                             (0-255, flagged MANUAL if overridden), and the day
                             schedule currently loaded on the light (24h sparkline
                             + key time/intensity points per R/G/B/W channel).
@@ -384,7 +393,6 @@ module LongTooth
 
   def status
     ver  = read("GetGatewayVersion").strip
-    tz   = read("GetTimezone").strip
     devx = read("GetDevices")
     abort "no data — gateway silent (check power and the Gateway ID)" if devx.empty?
 
@@ -397,7 +405,7 @@ module LongTooth
 
     tempc = temp.to_f > 0 ? "#{temp.to_f.round(1)}°C" : "n/a"
     puts "  #{name}   [#{gateway}]  id #{gateway_id}  fw #{ver}"
-    puts "  time #{format('%02d:%02d', ct / 3600, ct % 3600 / 60)} (#{tz})   temp #{tempc}"
+    puts "  time #{format('%02d:%02d', ct / 3600, ct % 3600 / 60)} (device local)   temp #{tempc}"
     puts "  channels now:"
     { "Red" => "31", "Green" => "32", "Blue" => "34", "White" => "37" }.each do |ch, col|
       v = (getv.call("RgbwBulbControl", "#{ch}LumTarget") || "0").to_i
@@ -418,6 +426,7 @@ when nil, "help", "-h", "--help", "services"
   LongTooth.help
 else
   LongTooth.configured!   # die early if .atlantik-gateway is missing/invalid
+  LongTooth.refresh!      # re-poll the mesh so every read is fresh, not cached (§44)
   case ARGV[0]
   when "status"   then LongTooth.status
   when "mode"     then LongTooth.mode(*ARGV[1..])

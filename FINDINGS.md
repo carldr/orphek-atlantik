@@ -962,9 +962,9 @@ move the light (daylight only; `DRY_RUN=1` previews writes without sending).
 - `configure` — prompt for your Gateway ID (the `888.1.…` number on the
   underside of the gateway) and store it in `.atlantik-gateway` (cwd). Required:
   every other command aborts early until it is set.
-- `status` — gateway IP+id+fw, device clock+timezone, temp, current channel
-  levels (MANUAL-flagged if overridden), and the loaded day schedule (24h
-  sparkline).
+- `status` — gateway IP+id+fw, device clock (phone-local; forces a cache
+  refresh, §44), temp, current channel levels (MANUAL-flagged if overridden),
+  and the loaded day schedule (24h sparkline).
 - `programs` — every stored program, decoded.
 - `<Service> [body]` — call any of the 63 services (e.g. `GetUser admin`).
 - `mode manual <r> <g> <b> <w>` — hold channels at 0–255 each (`RgbwBulbControl
@@ -1018,6 +1018,47 @@ the IP, so DHCP changes are still handled.
 Map to the app: their step 4 (type Gateway ID) = our `configure`; step 5
 ("Search") = `GetDevices`. We just automate the number-off-the-box lookup and
 skip the phone.
+
+## 44. The last bug — a stale clock, and the gateway's device cache
+
+`status` kept showing a device clock that was wrong and never advanced: stuck at
+`04:27` (`RgbwCurrentTime.CurrentTime` = 16041 s), run after run. Reading the raw
+value confirmed it was frozen, unchanged minutes apart:
+
+```shell
+$ ruby atlantik.rb GetDevices | grep -o 'RgbwCurrentTime.\{0,50\}'
+...<var name="CurrentTime">16041</var>...    # identical minutes later
+```
+
+Then it would jump — 26643 (`07:24`), later 27018 (`07:30`) — but **only right
+after the phone app was opened**, never on its own, and each jump matched real
+elapsed wall time.
+
+**Cause: the gateway caches each node's state.** `GetDevices` returns that cache,
+not a live poll of the mesh, so the light's clock/temp only move when something
+forces a re-poll. The phone forces it: its Device Status panel
+(`DeviceListFragment`) calls `GetUpdateSingleDeviceCache <id>` (or gateway-wide
+`GetUpdateDeviceCache`, empty body — `DeviceManager.getUpdateDeviceCache`) and
+reads time/temp from *that* fresh reply, never from a plain `GetDevices`. Ours
+used plain `GetDevices`, so we saw whatever the phone had last refreshed.
+
+Fix: the CLI now calls `GetUpdateDeviceCache` before every gateway command (a
+`refresh!` in the dispatcher), so any read — `status`, a raw `GetDevices`, the
+device-id lookup that writes use — sees freshly-polled state. The clock advances
+on its own again.
+
+Two related facts, from the decompiled app:
+
+- **No timezone translation.** The app formats `CurrentTime` seconds-of-day
+  straight to `HH:MM` (same formula we use). The value is "local" only because
+  the phone *sets* it: on connect the app calls `SetTime` with its own calendar
+  (`DeviceManager`, `"%tY.%tm.%td-%tH:%tM:%tS"`), i.e. phone-local wall time. The
+  light has no timezone logic; it runs its seconds-of-day schedule against
+  whatever local time the phone last pushed. If no phone connects, nothing
+  corrects it.
+- **`GetTimezone` is the gateway's OS zone, not the light's** — unrelated to the
+  device clock (it read "Asia/Hong Kong" while the light ran on the owner's
+  phone-local time), so it's been dropped from `status`.
 
 ## Next steps
 

@@ -298,6 +298,26 @@ does precisely what the app does by reading and writing variables on a mesh
 device through a gateway. The app was never magic. It was just the only one
 holding the key.
 
+### One last bug: the clock that wouldn't tick
+
+There was one loose thread. My `status` showed the light's clock, the clock was
+wrong, and — worse — it never moved. Run it now, run it five minutes later: the
+same frozen time. Then I'd glance at my phone, run it once more, and the clock
+would suddenly be right, jumped forward by exactly the minutes that had passed.
+
+The tell was that it only ever jumped just after the phone had been open. The
+light's clock wasn't frozen; the *gateway* was handing me a stale snapshot. It
+caches each device's state and only re-polls the mesh when something asks it to —
+and the phone asks every single time, calling a "refresh the cache" service right
+before it draws its status screen. I'd been reading the cache without ever
+refreshing it, so I saw whatever the phone had last pulled. One extra call — the
+same one the app makes, before every read — and the clock ticks on its own again.
+
+And the time itself? The light has no idea what timezone it's in. The phone just
+pushes its own wall clock at the light whenever it connects, and the light runs
+its day against that. There's no clever sync: the "current time" is literally the
+last time a phone bothered to tell it.
+
 ### The point
 
 None of this needed anything exotic. The inputs were public downloads. The tools
